@@ -1,2 +1,0 @@
-Error: `a SyntaxError: Unexpected token < in JSON at position 0`
-[https://stackoverflow.com/questions/53152745/nexus-with-npm-login-problems](https://stackoverflow.com/questions/53152745/nexus-with-npm-login-problems)

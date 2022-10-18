@@ -1,6 +1,5 @@
 ---
 layout: page
-title: Vanyi的网站
 titleTemplate: 常用代码
 ---
 

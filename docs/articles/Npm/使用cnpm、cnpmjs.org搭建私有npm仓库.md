@@ -1,6 +1,14 @@
-一、安装 `cnpm、cnpmjs.org`；
-二、配置  `~/.cnpmjs.org/config.json` ，若没有则自行创建；参考：https://github.com/cnpm/cnpmjs.org/blob/master/config/index.js
+# 使用cnpm、cnpmjs.org搭建私有npm仓库
 
+## 一、NPM安装依赖 
+`cnpm、cnpmjs.org`
+
+## 二、配置  
+`~/.cnpmjs.org/config.json` ，若没有则自行创建。  
+
+[配置参考](https://github.com/cnpm/cnpmjs.org/blob/master/config/index.js)
+
+## 三、配置说明  
 
 ```json
 {
@@ -28,5 +36,6 @@
 }
 ```
 
-包默认储存目录：`~/.cnpmjs.org/nfs`
-配置文件目录：`~/.cnpmjs.org/config.json`
+## 四、默认目录
+- 包默认储存目录：`~/.cnpmjs.org/nfs`
+- 配置文件目录：`~/.cnpmjs.org/config.json`

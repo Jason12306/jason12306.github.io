@@ -1,1 +1,0 @@
-# [官方文档](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)

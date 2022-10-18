@@ -1,4 +1,6 @@
-# 一、DApp 与 以太坊（ETH）钱包授权、交互
+# DApp 授权
+
+## 一、DApp 与 以太坊（ETH）钱包授权、交互
 
 [web3官方文档 v1.2.6](https://learnblockchain.cn/docs/web3.js/getting-started.html)
 > 支持以太坊的浏览器如 Mist 或 MetaMask 会有提供一个 `ethereumProvider` 或 `web3.currentProvider` 。对于 web3.js 来说，可以检查 Web3.givenProvider ，如果属性为 null 再连接本地或远程的节点。
@@ -39,6 +41,6 @@ async function initWeb3 () {
 ```
 
 ## 二、DApp 与 波宝（TRX）钱包授权、交互 
-[波宝钱包文档](https://developers.tron.network/docs/wallet-integration)简单明了，直接对接即可  
+[波宝文档](https://developers.tron.network/docs) 
 
 [TronWeb对象 API](https://cn.developers.tron.network/reference#tronweb-object)

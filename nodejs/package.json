@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "publish:test": "cross-env NODE_ENV=development node algolia.mjs",
-    "publish:prod": "cross-env NODE_ENV=production node algolia.mjs",
+    "algolia:test": "cross-env NODE_ENV=development node algolia.mjs",
+    "algolia:prod": "cross-env NODE_ENV=production node algolia.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

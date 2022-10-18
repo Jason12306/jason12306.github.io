@@ -1,5 +1,6 @@
-# 一、编写
-```
+# solidity 编写 编译 部署 调用
+## 一、编写
+```solidity
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity >=0.4.16 <0.8.0;
 
@@ -21,10 +22,10 @@ contract SimpleStorage {
 
 ```
 
-# 二、编译
+## 二、编译
 
-## 方式一： 使用 solc 编译 
-```
+### 方式一： 使用 solc 编译 
+```shell
 solcjs --help
 Usage: solcjs [options]
 
@@ -42,9 +43,9 @@ Options:
 
 注：`--base-path` 设置编译目录，避免打包时 `import` 找到不到目录
   
-# 三、部署
-## 场景一、部署到本地测试链
-```
+## 三、部署
+### 场景一、部署到本地测试链
+```js
 // 实例化一个合约
   const myContract = new this.web3Instance.eth.Contract(abi)
 
@@ -58,8 +59,8 @@ Options:
   })
 ```
 
-# 四、调用
-```
+## 四、调用
+```js
     async getValue() {
       const res = await this.contractInstance.methods.getVal().call()
       console.log("getVal", res);

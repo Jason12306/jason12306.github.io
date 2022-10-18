@@ -1,4 +1,5 @@
-1. 编写指令  
+# nuxt3自定义指令
+## 一、编写指令  
 
 ```ts
 import { App } from 'vue'
@@ -11,7 +12,7 @@ export default (vueApp: App) => {
   })
 }
 ```
-2. 注册指令  
+## 二、注册指令  
 
 ```ts
 import { defineNuxtPlugin } from '#app'
@@ -21,7 +22,7 @@ export default defineNuxtPlugin(nuxtApp => {
     registeDirectives(nuxtApp.vueApp)
 })
 ```
-3. `nuxt` 配置  
+## 三、`nuxt` 配置  
   
 ```ts
 import { defineNuxtConfig } from 'nuxt3'

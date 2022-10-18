@@ -1,1 +1,0 @@
-[TypeScript 高级类型](https://segmentfault.com/a/1190000023800536)

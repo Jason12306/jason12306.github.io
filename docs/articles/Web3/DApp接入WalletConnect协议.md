@@ -1,9 +1,10 @@
-## 什么是 WalletConnect？
+# DApp接入WalletConnect协议
+
+## 一、什么是 WalletConnect？
 [官方文档](https://docs.walletconnect.org/)
 > WalletConnect是一种在Wallet和 Dapps（Web3 Apps）之间安全通信的开放协议。这个协议在两个app或（和）设备建立了远程连接，通过一个桥接服务器（Bridge server）中继载荷。这些有效负载通过两端之间的共享密钥对称地加密。
 
-## 在DApp中接入
-
+## 二、在DApp中接入
 1. 引入相关依赖 `@walletconnect/client`、`@walletconnect/qrcode-modal`
 2. 初始化连接
 3. 订阅事件(用于获取用户信息，连接信息等)
