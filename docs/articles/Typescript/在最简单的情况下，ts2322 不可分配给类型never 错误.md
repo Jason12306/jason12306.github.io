@@ -1,0 +1,1 @@
+[在最简单的情况下，ts2322 不可分配给类型never错误 ](https://www.5axxw.com/questions/content/ps6sfp)

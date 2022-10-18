@@ -1,0 +1,1 @@
+[Mac终端(terminal) bash和zsh切换方法](https://www.jianshu.com/p/bc59a57dfcc2)

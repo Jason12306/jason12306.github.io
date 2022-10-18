@@ -1,0 +1,1 @@
+[https://github.com/electron-userland/electron-builder/issues/6289](https://github.com/electron-userland/electron-builder/issues/6289)

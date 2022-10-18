@@ -1,0 +1,1 @@
+[TypeScript的一些小用法](https://zhuanlan.zhihu.com/p/52662645)

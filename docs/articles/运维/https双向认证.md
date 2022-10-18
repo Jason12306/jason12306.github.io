@@ -1,0 +1,35 @@
+## 什么是双向认证？
+双向认证即客户端和服务器端都需要验证对方的身份。单向认证的过程，客户端从服务器端下载服务器端公钥证书进行验证，然后建立安全通信通道。双向通信流程，客户端除了需要从服务器端下载服务器的公钥证书进行验证外，还需要把客户端的公钥证书上传到服务器端给服务器端进行验证，等双方都认证通过了，才开始建立安全通信通道进行数据传输。
+
+## 单向认证流程
+单向认证流程中，服务器端保存着公钥证书和私钥两个文件，整个握手过程如下：
+![单向认证](https://assets.vanyi.top/imgs/单向认证.webp)
+
+## 双向认证流程
+![双向认证](https://assets.vanyi.top/imgs/双向认证.webp)
+
+[使用`openssl ` 生成自签名证书](https://vanyi.top/article/ARTICLE_73187694a7dfd8-960a-490e-9903-e1d148c8758b983514)
+需要生成以下证书：
+CA证书（ca.csr，ca.key，ca.crt）
+服务器端证书（server.csr，server.key，server.crt或使用第三方颁发的权威证书）
+客户端证书（client.csr，client.key，client.crt）
+客户端p12格式证书（client.p12）用于浏览器中
+
+## Nginx配置
+```
+# ...
+ssl                  on;  
+ssl_certificate      /yourpath/to/server.crt;  #server公钥证书 或 第三发颁发
+ssl_certificate_key  /yourpath/to/server.key;  #server私钥 或 第三发颁发
+ssl_client_certificate /yourpath/to/ca.crt;  # 生成的自签CA证书
+ssl_verify_client on;  #开启客户端证书验证
+ssl_crl /etc/pki/CA/crl/crl.pem; # 吊销证书文件 需要存在
+# ...
+
+```
+参考资料：
+https://www.jianshu.com/p/2b2d1f511959?utm_campaign=haruki
+https://blog.csdn.net/endzhi/article/details/105002409
+https://help.aliyun.com/document_detail/85954.html?spm=5176.14113079.0.dexternal.2df756a7V6Dup3
+https://support.huaweicloud.com/usermanual-elb/zh_cn_elb_03_0006.html
+https://cloud.tencent.com/document/product/269/2714

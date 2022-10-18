@@ -1,0 +1,1 @@
+[NodeJS globals and TypeScript](https://marcinbiernat.pl/2020/03/nodejs-globals/)
