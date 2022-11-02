@@ -22,7 +22,7 @@ const articlesSidebar = dirs
     };
   });
 
-const isProd = process.env.NODE_ENV === "production"
+const isProd = process.env.NODE_ENV === "production";
 
 export default {
   title: "凡伊",
@@ -37,12 +37,23 @@ export default {
     nav: [
       { text: "技术文章", link: "/articles/" },
       { text: "常用代码", link: "/commonly-used-codes/" },
-      { text: "🛠️ 小工具",
-         items: [
-          { text: '本地 http 服务', link: 'https://github.com/Vanyi0924/local-server' },
-          { text: '本地 ws 服务', link: 'https://github.com/Vanyi0924/local-ws-server' },
-        ]
-     },
+      {
+        text: "🛠️ 小工具",
+        items: [
+          {
+            text: "本地 http 服务",
+            link: "https://github.com/Vanyi0924/local-server",
+          },
+          {
+            text: "本地 ws 服务",
+            link: "https://github.com/Vanyi0924/local-ws-server",
+          },
+          {
+            text: "electron+vue3项目模板",
+            link: "https://github.com/Vanyi0924/electron-vue3-template",
+          },
+        ],
+      },
     ],
     sidebar: {
       "/articles/": articlesSidebar,
@@ -58,9 +69,9 @@ export default {
               text: "JavaScript",
               link: `/commonly-used-codes/js`,
             },
-          ]
-        }
-      ]
+          ],
+        },
+      ],
     },
     // editLink: {
     //   pattern: "https://github.com/vuejs/vitepress/edit/main/docs/:path",

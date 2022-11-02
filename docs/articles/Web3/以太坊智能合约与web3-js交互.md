@@ -1,4 +1,4 @@
-# 智能合约与 web3-js 交互
+# 以太坊智能合约与 web3-js 交互
 
 ## 如何创建一个 Web3 实例？
 
@@ -8,7 +8,7 @@ import Web3 from "web3";
 const web3 = new Web3(Web3.givenProvider || {RPC地址});
 ```
 
-## 如何连接 MetaMask 等钱包？
+## 如何连接 MetaMask 钱包？
 
 ```js
 web3.eth.requestAccounts();
