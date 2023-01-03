@@ -16,4 +16,7 @@
 添加用户：git config --global user.name  
 注销用户：git config --global --unset user.name  
 初始化本地库：git init  
-发布新建的本地分支到远程分支： git push -u origin vy-1028  
+发布新建的本地分支到远程分支： git push -u origin xxx  
+更新远程分支列表：git remote update origin --prune  
+放弃已追踪的某个文件：git update-index --assume-unchanged filename  
+撤销放弃已追踪的某个文件：git update-index --no-assume-unchanged filename  

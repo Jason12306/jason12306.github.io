@@ -7,7 +7,7 @@
     "docs:dev": "cross-env NODE_ENV=development vitepress dev docs",
     "docs:build": "cross-env NODE_ENV=production vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "publish": "npm run docs:build && node publish.mjs",
+    "publish": "npm run docs:build && node nodejs/publish.mjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
