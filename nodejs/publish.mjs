@@ -16,6 +16,8 @@ const time =
   now.toLocaleDateString().replaceAll("/", "-") +
   " " +
   now.toLocaleTimeString();
+shell.exec(`git config user.email "vanyi0924@gmail.com"`);
+shell.exec(`git config user.name "vanyi"`);
 shell.exec(`git pull`);
 shell.exec(`git add .`);
 shell.exec(`git commit -am "auto update:${time}"`);
