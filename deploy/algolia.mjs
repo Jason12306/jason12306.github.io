@@ -1,7 +1,4 @@
-import {
-  readdirSync,
-  readFileSync,
-} from "fs";
+import { readdirSync, readFileSync } from "fs";
 import algoliasearch from "algoliasearch";
 
 const isProd = process.env.NODE_ENV === "production";
@@ -79,17 +76,18 @@ async function syncDataToAlgolia() {
   console.log("上传中");
   const client = algoliasearch(
     "A1DKKY63GX",
-    readFileSync("./keys").toString().split("\n")[0]
+    readFileSync("deploy/keys").toString().split("\n")[0]
   );
   const index = client.initIndex(isProd ? "prod_vite_blog" : "test_vite_blog");
-  const objects = await genArticlesData(readLocalDirData("../docs/articles"));
+  const objects = await genArticlesData(readLocalDirData("docs/articles"));
   try {
     await index.clearObjects();
     await index.saveObjects(objects);
-  } catch(err) {
+    console.log("上传完成");
+  } catch (err) {
     console.log(err);
+    console.error("上传失败");
   }
-  console.log("上传完成");
 }
 
 syncDataToAlgolia();
