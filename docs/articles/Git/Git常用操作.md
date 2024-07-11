@@ -1,8 +1,9 @@
-# Git常用操作
+# Git 常用操作
+
 克隆仓库：git clone https://github.com/xxx.git  
 创建分支：git branch [name]  
-切换分支:  git checkout [name]  
-检出分支:  git checkout -b [name]  
+切换分支: git checkout [name]  
+检出分支: git checkout -b [name]  
 新增远程分支：git push --set-upstream origin xxx  
 抓取远程分支：git fetch origin [name]  
 同步远程分支：git pull origin [name]  
@@ -20,3 +21,4 @@
 更新远程分支列表：git remote update origin --prune  
 放弃已追踪的某个文件：git update-index --assume-unchanged filename  
 撤销放弃已追踪的某个文件：git update-index --no-assume-unchanged filename  
+关闭大小写不敏感：git config core.ignorecase false
