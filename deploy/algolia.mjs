@@ -1,6 +1,12 @@
 import { readdirSync, readFileSync } from "fs";
 import algoliasearch from "algoliasearch";
 
+import {
+  appId,
+  indexNameDev,
+  indexNameProd,
+} from "./config.mjs";
+
 const isProd = process.env.NODE_ENV === "production";
 
 /**
@@ -75,10 +81,10 @@ async function genArticlesData(data) {
 async function syncDataToAlgolia() {
   console.log("上传中");
   const client = algoliasearch(
-    "A1DKKY63GX",
+    appId,
     readFileSync("deploy/keys").toString().split("\n")[0]
   );
-  const index = client.initIndex(isProd ? "prod_vite_blog" : "test_vite_blog");
+  const index = client.initIndex(isProd ?  indexNameProd : indexNameDev);
   const objects = await genArticlesData(readLocalDirData("docs/articles"));
   try {
     await index.clearObjects();

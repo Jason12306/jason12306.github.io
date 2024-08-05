@@ -6,6 +6,7 @@ TypeScript 中的接口定义了对象结构的契约，指定其属性和方法
 
 ## TypeScript 中的“部分”实用程序类型
 `Partial`类型用于使现有类型的所有属性成为可选
+`Required`类型用于使现有类型的所有属性成为必选
 
 ## interface 与 type 的相同点和区别
 ### 相同点

@@ -4,13 +4,12 @@
   "description": "vitepress blog",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development vitepress dev docs",
+    "dev": "cross-env NODE_ENV=development vitepress dev docs --port 1028",
     "build": "cross-env NODE_ENV=production vitepress build docs",
     "docs:serve": "vitepress serve docs",
-    "publish": "npm run docs:build && node nodejs/publish.mjs",
+    "publish": "npm run build && node deploy/publish.mjs",
     "algolia:dev": "cross-env NODE_ENV=development node deploy/algolia.mjs",
-    "algolia:prod": "cross-env NODE_ENV=production node deploy/algolia.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "algolia:prod": "cross-env NODE_ENV=production node deploy/algolia.mjs"
   },
   "keywords": [
     "blog",
@@ -32,9 +31,10 @@
   },
   "pnpm": {
     "peerDependencyRules": {
-      "ignoreMissing": [
-        "@algolia/client-search"
-      ]
+      "ignoreMissing": []
     }
+  },
+  "dependencies": {
+    "mind-elixir": "^4.0.5"
   }
 }
