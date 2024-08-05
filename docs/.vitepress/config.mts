@@ -1,12 +1,10 @@
 import { readdirSync, readFileSync, lstatSync, link } from "fs";
 import { resolve } from "path";
-import {
-  apiKey,
-  appId,
-  indexNameDev,
-  indexNameProd,
-} from "../../deploy/config.mjs";
 import { defineConfig } from "vitepress";
+
+export const appId = "PBT7FOA8CB";
+export const apiKey = "9864ce31d8bc76699e7a9ded76e13ed8";
+export const indexName = "vanyi0924io" ;
 
 const isProd = process.env.NODE_ENV === "production";
 const DS_STORE = ".DS_Store";
@@ -158,7 +156,7 @@ export default defineConfig({
       options: {
         appId,
         apiKey,
-        indexName: isProd ? indexNameProd : indexNameDev,
+        indexName,
         // searchParameters: {
         //   facetFilters: ["lang:zh-Hans"],
         // },
