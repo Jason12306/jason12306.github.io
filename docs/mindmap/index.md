@@ -5,17 +5,9 @@ footer: false
 
 <script setup>
 import { ref, onMounted } from 'vue'
-import MindElixir from 'mind-elixir'
 import { useData } from 'vitepress'
 
 const { theme } = useData()
-
-const options = {
-  el: "#map",
-  theme: MindElixir.THEME,
-  editable: false,
-  direction: 2,
-};
 
 const themeArticle = (data) => {
   const returnValue = [];
@@ -49,19 +41,27 @@ const data = {
 };
 
 onMounted(() => {
-  const mind = new MindElixir(options);
-  mind.init(data);
+  import('mind-elixir').then(({ default: MindElixir }) => {
+    const options = {
+      el: "#map",
+      theme: MindElixir.THEME,
+      editable: false,
+      direction: 2,
+    };
 
-  mind.bus.addListener("selectNode", (node) => {
-    node?.hyperLink && window.open(node?.hyperLink);
-  });
+    const mind = new MindElixir(options);
+    mind.init(data);
+
+    mind.bus.addListener("selectNode", (node) => {
+      node?.hyperLink && window.open(node?.hyperLink);
+    });
+  })
 });
-
-
-
 </script>
 
-<div id="map"></div>
+<ClientOnly>
+  <div id="map"></div>
+</ClientOnly>
 
 <style>
 #map {

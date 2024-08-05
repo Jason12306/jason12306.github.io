@@ -1,8 +1,8 @@
 ---
 layout: home
 
-title: 前端杰森
-titleTemplate: 前端杰森
+title: 前端小栈
+titleTemplate: 前端小栈
 
 hero:
   name: Jason Front-End
@@ -41,5 +41,4 @@ features:
 ---
 
 <style>
-
 </style>

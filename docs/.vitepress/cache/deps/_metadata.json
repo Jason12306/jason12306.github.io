@@ -1,31 +1,31 @@
 {
-  "hash": "8df3e625",
+  "hash": "64871b31",
   "configHash": "fb305bad",
-  "lockfileHash": "b793dc99",
-  "browserHash": "d2ca4d0e",
+  "lockfileHash": "3f834f11",
+  "browserHash": "a0c59cd4",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.4.31/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "073f803f",
+      "fileHash": "19ee9150",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.3.5/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "3d1e64d5",
+      "fileHash": "d01c1f5b",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@10.11.0_vue@3.4.31/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "d183166a",
+      "fileHash": "f4f32cff",
       "needsInterop": false
     },
     "mind-elixir": {
       "src": "../../../../node_modules/.pnpm/mind-elixir@4.0.5/node_modules/mind-elixir/dist/MindElixir.js",
       "file": "mind-elixir.js",
-      "fileHash": "7d9740c3",
+      "fileHash": "3682d903",
       "needsInterop": false
     }
   },
