@@ -22,3 +22,7 @@
 放弃已追踪的某个文件：git update-index --assume-unchanged filename  
 撤销放弃已追踪的某个文件：git update-index --no-assume-unchanged filename  
 关闭大小写不敏感：git config core.ignorecase false
+
+[Git 官方文档](https://git-scm.com/book/zh/v2)  
+[工作流钩子](https://git-scm.com/book/zh/v2/%E8%87%AA%E5%AE%9A%E4%B9%89-Git-Git-%E9%92%A9%E5%AD%90)  
+[husky](https://typicode.github.io/husky/)

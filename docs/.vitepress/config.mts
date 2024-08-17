@@ -93,6 +93,8 @@ const toHeadArticles: string[] = [
   'Vue',
   'React',
   'Express',
+  '设计模式',
+  '前端',
 ]
 // 将一下文章分类放到尾部
 const toEndArticles: string[] = ['运维', '区块链', 'Kafka', '资源']
@@ -135,6 +137,7 @@ export default defineConfig({
     nav: [
       { text: '📝 技术文章', link: '/articles/CSS/CSS网格布局(Grid)' },
       { text: '🤖 部署脚本', link: '/deployment-scripts/Linux安装Nginx' },
+      { text: '💪 解决方案', link: '/solutions/前端首屏加载优化' },
       {
         text: '🛠️ 在线工具',
         link: '/online-tools/在线工具/css-clip-path 裁剪路径在线生成',

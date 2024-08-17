@@ -28,7 +28,7 @@ features:
   - icon: 🤖
     title: 部署脚本
     details: Linux上一些常用软件的部署脚本
-    link: /deployment-scripts/Linux安装Nginx.html
+    link: /deployment-scripts/Linux安装Nginx.
     linkText: 详情
   - icon: 🛠️
     title: 在线工具
@@ -37,6 +37,8 @@ features:
     linkText: 查看
   - icon: 💪
     title: 解决方案
+    link: /solutions/前端首屏加载优化
+    linkText: 详情
     details: 实际开发场景中，所用到的解决方案
 ---
 
