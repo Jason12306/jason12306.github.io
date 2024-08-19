@@ -95,6 +95,7 @@ const toHeadArticles: string[] = [
   'Express',
   '设计模式',
   '前端',
+  '工程化',
 ]
 // 将一下文章分类放到尾部
 const toEndArticles: string[] = ['运维', '区块链', 'Kafka', '资源']
