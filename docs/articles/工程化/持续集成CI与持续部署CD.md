@@ -38,6 +38,14 @@
 
 > GitHub Actions GitHub 推出的持续集成服务，GitHub 把抓取代码/测试/登录远程服务器/发布/部署项目等操作称之为 actions。
 
+### 关于 GITHUB_TOKEN
+
+在每个工作流作业开始时，GitHub 会自动创建唯一的 GITHUB_TOKEN 机密以在工作流中使用。 可以使用 GITHUB_TOKEN 在工作流作业中进行身份验证。**令牌的权限仅限于包含您的工作流程的仓库**。
+
+- [参考](https://docs.github.com/zh/actions/security-for-github-actions/security-guides/automatic-token-authentication#about-the-github_token-secret)
+
+### 参考资料
+
 - [GitHub Actions 的工作流语法](https://docs.github.com/zh/actions/writing-workflows/workflow-syntax-for-github-actions)
 
 - [github 文档](https://docs.github.com/zh)

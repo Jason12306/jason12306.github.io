@@ -3,7 +3,7 @@ name: jason test ci
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['test']
+    branches: ['test1']
   workflow_call:
     inputs:
       aa:

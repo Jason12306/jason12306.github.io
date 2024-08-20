@@ -3,7 +3,7 @@ name: Vite Github Pages Deploy
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: ['main1']
 
 jobs:
   # Build job
