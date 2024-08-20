@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "vitepress dev docs --port 1028",
     "build": "vitepress build docs",
-    "docs:serve": "vitepress serve docs",
-    "publish": "node deploy/publish-official-web.mjs",
-    "prepare": "husky"
+    "docs:serve": "vitepress serve docs"
   },
   "keywords": [
     "blog",

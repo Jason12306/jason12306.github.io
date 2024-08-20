@@ -137,6 +137,7 @@ export default defineConfig({
     logo: '/favicon.ico',
     nav: [
       { text: '📝 技术文章', link: '/articles/CSS/CSS网格布局(Grid)' },
+      { text: '📚 算法', link: '/algorithm/动态规划' },
       { text: '🤖 部署脚本', link: '/deployment-scripts/Linux安装Nginx' },
       { text: '💪 解决方案', link: '/solutions/前端首屏加载优化' },
       {
