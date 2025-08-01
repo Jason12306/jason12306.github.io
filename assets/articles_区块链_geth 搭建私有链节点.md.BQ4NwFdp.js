@@ -1,0 +1,29 @@
+import{_ as s,c as n,o as p,a2 as t}from"./chunks/framework.CnKoBJ9A.js";const r=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/区块链/geth 搭建私有链节点.md","filePath":"articles/区块链/geth 搭建私有链节点.md"}'),o={name:"articles/区块链/geth 搭建私有链节点.md"};function e(l,a,i,c,u,q){return p(),n("div",null,a[0]||(a[0]=[t(`<ol><li><p><a href="https://geth.ethereum.org/docs/install-and-build/installing-geth" target="_blank" rel="noreferrer">geth客户端安装</a></p></li><li><p>创建目录存放数据 <code>mkdir data</code></p></li><li><p>创建账户 <code>geth --datadir data account new</code></p></li><li><p>配置创世区块</p></li></ol><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>{</span></span>
+<span class="line"><span>  &quot;config&quot;: {</span></span>
+<span class="line"><span>    &quot;chainId&quot;: 1129,</span></span>
+<span class="line"><span>    &quot;homesteadBlock&quot;: 0,</span></span>
+<span class="line"><span>    &quot;eip150Block&quot;: 0,</span></span>
+<span class="line"><span>    &quot;eip155Block&quot;: 0,</span></span>
+<span class="line"><span>    &quot;eip158Block&quot;: 0,</span></span>
+<span class="line"><span>    &quot;byzantiumBlock&quot;: 0,</span></span>
+<span class="line"><span>    &quot;constantinopleBlock&quot;: 0,</span></span>
+<span class="line"><span>    &quot;petersburgBlock&quot;: 0,</span></span>
+<span class="line"><span>    &quot;istanbulBlock&quot;: 0</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  &quot;alloc&quot;: {</span></span>
+<span class="line"><span>    &quot;0x0000000000000000000000000000000000000001&quot;: {</span></span>
+<span class="line"><span>      &quot;balance&quot;: &quot;111111111&quot;</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    &quot;0x0000000000000000000000000000000000000002&quot;: {</span></span>
+<span class="line"><span>      &quot;balance&quot;: &quot;222222222&quot;</span></span>
+<span class="line"><span>    }</span></span>
+<span class="line"><span>  },</span></span>
+<span class="line"><span>  &quot;coinbase&quot;: &quot;0x0000000000000000000000000000000000000000&quot;,</span></span>
+<span class="line"><span>  &quot;difficulty&quot;: &quot;0x20000&quot;,</span></span>
+<span class="line"><span>  &quot;extraData&quot;: &quot;&quot;,</span></span>
+<span class="line"><span>  &quot;gasLimit&quot;: &quot;0x2fefd8&quot;,</span></span>
+<span class="line"><span>  &quot;nonce&quot;: &quot;0x0000000000000042&quot;,</span></span>
+<span class="line"><span>  &quot;mixhash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,</span></span>
+<span class="line"><span>  &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,</span></span>
+<span class="line"><span>  &quot;timestamp&quot;: &quot;0x00&quot;</span></span>
+<span class="line"><span>}</span></span></code></pre></div><ol start="5"><li><p>写入创世区块 <code>geth --datadir data init genesis.json</code></p></li><li><p>启动 <code>geth --datadir data console</code></p></li><li><p><code>miner.start()</code> 开启挖矿</p></li></ol>`,3)]))}const _=s(o,[["render",e]]);export{r as __pageData,_ as default};

@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.CnKoBJ9A.js";const d=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/前端/1.关于fetch.md","filePath":"articles/前端/1.关于fetch.md"}'),c={name:"articles/前端/1.关于fetch.md"};function r(s,o,n,_,i,f){return a(),t("div")}const l=e(c,[["render",r]]);export{d as __pageData,l as default};
